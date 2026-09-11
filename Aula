@@ -1,4 +1,5 @@
 class Carro:
+
     def __init__(self, nome, ano, modelo, cor):
         self.nome = nome
         self.ano = ano
@@ -13,20 +14,11 @@ class Carro:
     def acelerar(self, valor):
         if valor > 0:
             self.__velocidade += valor
-            print(f"🏎️ Acelerou {valor} Km/h")
-        else:
-            print("⚠️ O valor de aceleração deve ser positivo.")
-
-    def frear(self, valor):
-        if 0 < valor <= self.__velocidade:
-            self.__velocidade -= valor
-            print(f"🛑 Reduziu {valor} Km/h")
-        else:
-            self.__velocidade = 0
-            print("🛑 O carro parou totalmente.")
+            print(f" Acelerou {valor} Km/h")
 
 meu_civic = Carro("Civic", 2020, "Touring", "Preta")
 meu_civic.acelerar(120)
 
 
-print(f"📊 No painel: {meu_civic.velocidade} km/h")
+print(f" No painel: {meu_civic.velocidade} km/h")
+
